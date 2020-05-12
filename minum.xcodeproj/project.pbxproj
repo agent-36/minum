@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D72246AB51B003764ED /* AppDelegate.swift */; };
 		60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D74246AB51B003764ED /* SceneDelegate.swift */; };
-		60AF9D77246AB51B003764ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D76246AB51B003764ED /* FirstViewController.swift */; };
-		60AF9D79246AB51B003764ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D78246AB51B003764ED /* SecondViewController.swift */; };
+		60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D76246AB51B003764ED /* WaterViewController.swift */; };
+		60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D78246AB51B003764ED /* DrinkViewController.swift */; };
 		60AF9D7C246AB51B003764ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D7A246AB51B003764ED /* Main.storyboard */; };
 		60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D7D246AB51B003764ED /* minum.xcdatamodeld */; };
 		60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D80246AB51F003764ED /* Assets.xcassets */; };
 		60AF9D84246AB51F003764ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D82246AB51F003764ED /* LaunchScreen.storyboard */; };
+		60AF9D8C246ABADF003764ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8B246ABADF003764ED /* InfoViewController.swift */; };
+		60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8D246ABAFB003764ED /* HistoryViewController.swift */; };
+		60AF9D90246AC6E3003764ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60AF9D6F246AB51B003764ED /* minum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AF9D72246AB51B003764ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AF9D74246AB51B003764ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60AF9D76246AB51B003764ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		60AF9D78246AB51B003764ED /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		60AF9D76246AB51B003764ED /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
+		60AF9D78246AB51B003764ED /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 		60AF9D7B246AB51B003764ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60AF9D7E246AB51B003764ED /* minum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minum.xcdatamodel; sourceTree = "<group>"; };
 		60AF9D80246AB51F003764ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60AF9D83246AB51F003764ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60AF9D85246AB51F003764ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AF9D8B246ABADF003764ED /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		60AF9D8D246ABAFB003764ED /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +68,16 @@
 			children = (
 				60AF9D72246AB51B003764ED /* AppDelegate.swift */,
 				60AF9D74246AB51B003764ED /* SceneDelegate.swift */,
-				60AF9D76246AB51B003764ED /* FirstViewController.swift */,
-				60AF9D78246AB51B003764ED /* SecondViewController.swift */,
+				60AF9D76246AB51B003764ED /* WaterViewController.swift */,
+				60AF9D78246AB51B003764ED /* DrinkViewController.swift */,
 				60AF9D7A246AB51B003764ED /* Main.storyboard */,
 				60AF9D80246AB51F003764ED /* Assets.xcassets */,
 				60AF9D82246AB51F003764ED /* LaunchScreen.storyboard */,
 				60AF9D85246AB51F003764ED /* Info.plist */,
 				60AF9D7D246AB51B003764ED /* minum.xcdatamodeld */,
+				60AF9D8B246ABADF003764ED /* InfoViewController.swift */,
+				60AF9D8D246ABAFB003764ED /* HistoryViewController.swift */,
+				60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */,
 			);
 			path = minum;
 			sourceTree = "<group>";
@@ -144,11 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60AF9D79246AB51B003764ED /* SecondViewController.swift in Sources */,
-				60AF9D77246AB51B003764ED /* FirstViewController.swift in Sources */,
+				60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */,
+				60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */,
 				60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */,
 				60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */,
+				60AF9D8C246ABADF003764ED /* InfoViewController.swift in Sources */,
+				60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */,
 				60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */,
+				60AF9D90246AC6E3003764ED /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

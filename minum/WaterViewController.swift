@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  minum
 //
 //  Created by Ihwan ID on 12/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class WaterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

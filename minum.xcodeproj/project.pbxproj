@@ -18,6 +18,8 @@
 		60AF9D8C246ABADF003764ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8B246ABADF003764ED /* InfoViewController.swift */; };
 		60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8D246ABAFB003764ED /* HistoryViewController.swift */; };
 		60AF9D90246AC6E3003764ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */; };
+		60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D96246AF775003764ED /* OnBoarding.storyboard */; };
+		60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D98246AF785003764ED /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		60AF9D8B246ABADF003764ED /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		60AF9D8D246ABAFB003764ED /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		60AF9D96246AF775003764ED /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		60AF9D98246AF785003764ED /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		60AF9D71246AB51B003764ED /* minum */ = {
 			isa = PBXGroup;
 			children = (
+				60AF9D91246AC8F4003764ED /* onboarding */,
 				60AF9D72246AB51B003764ED /* AppDelegate.swift */,
 				60AF9D74246AB51B003764ED /* SceneDelegate.swift */,
 				60AF9D76246AB51B003764ED /* WaterViewController.swift */,
@@ -80,6 +85,15 @@
 				60AF9D8F246AC6E3003764ED /* SettingsViewController.swift */,
 			);
 			path = minum;
+			sourceTree = "<group>";
+		};
+		60AF9D91246AC8F4003764ED /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				60AF9D96246AF775003764ED /* OnBoarding.storyboard */,
+				60AF9D98246AF785003764ED /* OnBoardingViewController.swift */,
+			);
+			path = onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,7 @@
 				60AF9D84246AB51F003764ED /* LaunchScreen.storyboard in Resources */,
 				60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */,
 				60AF9D7C246AB51B003764ED /* Main.storyboard in Resources */,
+				60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +174,7 @@
 				60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */,
 				60AF9D8C246ABADF003764ED /* InfoViewController.swift in Sources */,
 				60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */,
+				60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */,
 				60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */,
 				60AF9D90246AC6E3003764ED /* SettingsViewController.swift in Sources */,
 			);

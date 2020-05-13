@@ -1,0 +1,6 @@
+framework module Pods_minum {
+  umbrella header "Pods-minum-umbrella.h"
+
+  export *
+  module * { export * }
+}

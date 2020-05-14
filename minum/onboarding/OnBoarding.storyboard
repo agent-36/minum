@@ -108,9 +108,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88n-0Z-LMQ">
-                                <rect key="frame" x="13" y="776" width="389" height="50"/>
+                                <rect key="frame" x="13" y="771" width="389" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="getstarted-btn"/>
+                                <color key="backgroundColor" red="0.35427510740000001" green="0.61519300939999999" blue="0.97350102660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="RF7-Uw-RGJ" kind="showDetail" id="Pgy-RO-9CK"/>
                                 </connections>
@@ -139,6 +143,9 @@ and when you go to sleep, and drink a cup of water whenever they ring</string>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ehu-6S-KKW"/>
                     </view>
+                    <connections>
+                        <outlet property="onBoardNextButton" destination="88n-0Z-LMQ" id="iQC-U9-xch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISo-iw-CQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

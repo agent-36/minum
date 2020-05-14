@@ -11,19 +11,24 @@ import UIKit
 class OnBoardingViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var onBoardNextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        onBoardNextButton.layer.cornerRadius = 10
+               
         // Do any additional setup after loading the view.
     }
     
     @IBAction func buttonClicked(_ sender: UIButton) {
-       
+        
+           
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateInitialViewController() as? UITabBarController ?? UITabBarController()
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
+        
+     
     }
 
     /*

@@ -11,11 +11,11 @@ import UIKit
 class OnBoardingViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var onBoardNextButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        onBoardNextButton.layer.cornerRadius = 10
+//        onBoardNextButton.layer.cornerRadius = 10
                
         // Do any additional setup after loading the view.
     }

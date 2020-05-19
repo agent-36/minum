@@ -12,7 +12,6 @@ import WaveAnimationView
 class WaterViewController: UIViewController {
 
     @IBOutlet weak var lapView: UIView!
-    @IBOutlet weak var progressView: UIProgressView!
     
     var wave: WaveAnimationView!
     
@@ -20,8 +19,6 @@ class WaterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        progressView.layer.cornerRadius = 15
-        progressView.clipsToBounds = true
         lapView.layer.cornerRadius = lapView.frame.size.width/2
         lapView.clipsToBounds = true
 
@@ -42,6 +39,19 @@ class WaterViewController: UIViewController {
         
     }
     
+   @IBAction func goToSetting(_ sender: UIButton) {
+               let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+               let vc = storyboard.instantiateInitialViewController() as? ProfileViewController ?? UIViewController()
+              // vc.modalPresentationStyle = .fullScreen
+               present(vc, animated: true, completion: nil)
+       }
+    
+    @IBAction func goToDrink(_ sender: UIButton) {
+                  let storyboard = UIStoryboard(name: "Drink", bundle: nil)
+                  let vc = storyboard.instantiateInitialViewController() as? ProfileViewController ?? UIViewController()
+                 // vc.modalPresentationStyle = .fullScreen
+                  present(vc, animated: true, completion: nil)
+          }
 
 
 }
@@ -62,4 +72,6 @@ extension UIColor {
            blue: rgb & 0xFF
        )
    }
+    
+   
 }

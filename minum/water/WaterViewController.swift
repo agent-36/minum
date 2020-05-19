@@ -48,7 +48,7 @@ class WaterViewController: UIViewController {
     
     @IBAction func goToDrink(_ sender: UIButton) {
                   let storyboard = UIStoryboard(name: "Drink", bundle: nil)
-                  let vc = storyboard.instantiateInitialViewController() as? ProfileViewController ?? UIViewController()
+                  let vc = storyboard.instantiateInitialViewController() as? DrinkViewController ?? UIViewController()
                  // vc.modalPresentationStyle = .fullScreen
                   present(vc, animated: true, completion: nil)
           }

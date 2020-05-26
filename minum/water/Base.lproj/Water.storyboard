@@ -61,7 +61,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" image="gear" catalog="system"/>
                                 <connections>
-                                    <action selector="goToSetting:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3zs-Ve-CLI"/>
+                                    <segue destination="V91-uH-IT2" kind="show" id="exZ-Qb-JH7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGZ-MK-BxI">
@@ -96,6 +96,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1663.7681159420292" y="-788.16964285714278"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="WTI-IL-LJD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="V91-uH-IT2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9FN-SH-9V4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avj-3M-loO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="-1035"/>
         </scene>
     </scenes>
     <resources>

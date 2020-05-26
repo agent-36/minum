@@ -15,17 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Halaman History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBa-yY-Eqn">
-                                <rect key="frame" x="144" y="438" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-1u-7iz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iiZ-uV-YKb" firstAttribute="bottom" secondItem="UOG-1u-7iz" secondAttribute="bottom" id="HL7-jH-pxs"/>
+                            <constraint firstItem="UOG-1u-7iz" firstAttribute="leading" secondItem="iiZ-uV-YKb" secondAttribute="leading" id="QGz-2f-PNT"/>
+                            <constraint firstItem="UOG-1u-7iz" firstAttribute="top" secondItem="iiZ-uV-YKb" secondAttribute="top" id="dGM-xT-O9N"/>
+                            <constraint firstItem="iiZ-uV-YKb" firstAttribute="trailing" secondItem="UOG-1u-7iz" secondAttribute="trailing" id="nlN-D9-MxX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iiZ-uV-YKb"/>
                     </view>
+                    <connections>
+                        <outlet property="historyTable" destination="UOG-1u-7iz" id="ZYR-D4-9wC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTY-jZ-6HJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		609946242474508C008F62AA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609946232474508C008F62AA /* Profile.storyboard */; };
 		609946262474509B008F62AA /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609946252474509B008F62AA /* History.storyboard */; };
 		60994628247450A6008F62AA /* Drink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60994627247450A6008F62AA /* Drink.storyboard */; };
 		60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D72246AB51B003764ED /* AppDelegate.swift */; };
@@ -22,12 +21,12 @@
 		60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */; };
 		60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D96246AF775003764ED /* OnBoarding.storyboard */; };
 		60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D98246AF785003764ED /* OnBoardingViewController.swift */; };
+		6B3EC514247E573600B9AD75 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC513247E573600B9AD75 /* Profile.storyboard */; };
 		7E6CE28295678876AE658EE5 /* Pods_minum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A010684CE7D553975933E34A /* Pods_minum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56151643F631137A3C72496A /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
-		609946232474508C008F62AA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		609946252474509B008F62AA /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		60994627247450A6008F62AA /* Drink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Drink.storyboard; sourceTree = "<group>"; };
 		60AF9D6F246AB51B003764ED /* minum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		60AF9D96246AF775003764ED /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		60AF9D98246AF785003764ED /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		6B3EC513247E573600B9AD75 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		94D6BA364A604892118BBFA4 /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
 		A010684CE7D553975933E34A /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */,
-				609946232474508C008F62AA /* Profile.storyboard */,
+				6B3EC513247E573600B9AD75 /* Profile.storyboard */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -221,9 +221,9 @@
 				60AF9D84246AB51F003764ED /* LaunchScreen.storyboard in Resources */,
 				60994628247450A6008F62AA /* Drink.storyboard in Resources */,
 				60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */,
-				609946242474508C008F62AA /* Profile.storyboard in Resources */,
 				60AF9D7C246AB51B003764ED /* Water.storyboard in Resources */,
 				60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */,
+				6B3EC514247E573600B9AD75 /* Profile.storyboard in Resources */,
 				609946262474509B008F62AA /* History.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				DEVELOPMENT_TEAM = A6SVV7LMGJ;
 				INFOPLIST_FILE = minum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TVFQAT4MZP;
+				DEVELOPMENT_TEAM = A6SVV7LMGJ;
 				INFOPLIST_FILE = minum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

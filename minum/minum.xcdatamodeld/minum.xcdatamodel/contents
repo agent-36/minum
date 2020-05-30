@@ -5,7 +5,7 @@
         <relationship name="history" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="drink" inverseEntity="History"/>
     </entity>
     <entity name="History" representedClassName="History" syncable="YES" codeGenerationType="class">
-        <attribute name="hours" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hours" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="String"/>
         <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="drink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="history" inverseEntity="Drink"/>

@@ -25,5 +25,7 @@ class OnBoardingViewController: UIViewController {
             let vc = storyboard.instantiateInitialViewController() as? WaterViewController ?? UIViewController()
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
+        
+    
     }
 }

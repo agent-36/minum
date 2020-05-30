@@ -31,6 +31,9 @@ struct CoreDataManager {
         let drink = NSEntityDescription.insertNewObject(forEntityName: "Drink", into: context) as! Drink // NSManagedObject
 
         drink.date = date
+        drink.history?.hours = "17:00"
+        drink.history?.total = 120
+        
 
         do {
             try context.save()

@@ -9,100 +9,104 @@
 import UIKit
 
 class DrinkViewController: UIViewController {
+ 
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var drinkSlider: UISlider!
     @IBOutlet weak var drinkSliderLbl: UILabel! 
-    @IBOutlet weak var saveBtnLbl: UIButton!
+//    @IBOutlet weak var saveBtnLbl: UIButton!
     
+    @IBOutlet weak var waterVolumeTextField: UITextField!
+    
+    
+    let volumes = ["100",
+                "200",
+                "300",
+                "500",
+                "600",
+                "700",
+                "800"]
+    
+    var selectVolume: String?
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        createVolumePicker()
+        createToolbar()
+    }
+    
+    
+    func createVolumePicker() {
         
-        saveBtnLbl.layer.cornerRadius = 10
+        let volumePicker = UIPickerView()
+        volumePicker.delegate = self
+        
+        waterVolumeTextField.inputView = volumePicker
+        
+        //Customizations
+        volumePicker.backgroundColor = .lightGray
     }
+    
+    
+    func createToolbar() {
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        //Customizations
+        toolBar.barTintColor = .white
+        toolBar.tintColor = .systemBlue
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(DrinkViewController.dismissKeyboard))
+        
+      
+      
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/2, height: 40))
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.textAlignment = NSTextAlignment.center
+        label.text = "Water Volume (ml)"
+        label.textColor = .lightGray
+        
+        let labelButton = UIBarButtonItem(customView: label)
+        
+        toolBar.setItems([doneButton, labelButton], animated: false)
 
-    @IBAction func drinkSliderAct(_ sender: Any) {
-        let sliderValue = Int(drinkSlider.value)
-        drinkSliderLbl.text = String("\(sliderValue)ml")
+        toolBar.isUserInteractionEnabled = true
+        
+        waterVolumeTextField.inputAccessoryView = toolBar
     }
     
-//    @IBAction func sliderValueChanged(_ sender: UISlider) {
-//        let currentValue = Int(sender.value)
-//
-//        label.text = "\(currentValue)"
-//    }
-     
-    @IBAction func saveBtnAction(_ sender: Any) {
-    }
     
-    @IBAction func onChangePictureButtonClicked(_ sender: UIButton) {
-let actionSheet = UIAlertController(title: "Change Picture",
-                                            message: "Please select your picture source",
-                                            preferredStyle: .actionSheet)
-        actionSheet.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { [unowned self] (action) in
-           self.openPhotoGallery()
-        }))
-        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { [unowned self] (action) in
-            self.openCamera()
-        }))
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        present(actionSheet, animated: true, completion: nil)
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
-    
-     func openPhotoGallery() {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = false
-            present(imagePicker, animated: true, completion: nil)
-        }
-    }
-     //open photo from iphone library
-     func openCamera() {
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .camera
-            imagePicker.allowsEditing = false
-            present(imagePicker, animated: true, completion: nil)
-        }
-    }
-     //open iphone camera
+ 
 }
+
+
+//UIPickerview
+extension DrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return volumes.count
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return volumes[row]
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-
-////extension DrinkViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-////    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-////        dismiss(animated: true, completion: nil)
-////    }
-//
-////    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-////        if let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage {
-////            self.imagePickedBlock?(image)
-////        }else{
-////            print("Something went wrong")
-////        }
-////        currentVC.dismiss(animated: true, completion: nil)
-////    }
-//}
-
-extension DrinkViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-      
-      func imagePickerController(_ picker: UIImagePickerController,
-      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-          if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-              imageView.image = image
-          }
-          dismiss(animated: true, completion: nil)
-      }
-      
-      func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-          dismiss(animated: true, completion: nil)
-      }
-      
-  }
-
-
-
-
+        selectVolume = volumes[row]
+        waterVolumeTextField.text = selectVolume 
+    }
+    
+}

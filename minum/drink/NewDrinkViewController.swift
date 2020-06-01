@@ -23,7 +23,7 @@ class NewDrinkViewController: UIViewController {
         
         var image: UIImage?
         
-        var toggleCameraGestureRecognizer = UISwipeGestureRecognizer()
+
         
      
          override func viewDidLoad() {
@@ -35,11 +35,7 @@ class NewDrinkViewController: UIViewController {
             
                 setupCaptureSession()
                 captureSession.startRunning()
-                
-//                toggleCameraGestureRecognizer.direction = .up
-//                toggleCameraGestureRecognizer.addTarget(self, action: #selector(self.switchCamera))
-//                view.addGestureRecognizer(toggleCameraGestureRecognizer)
-    
+                    
                 styleCaptureButton()
             
             

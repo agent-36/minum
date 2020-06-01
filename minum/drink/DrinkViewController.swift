@@ -12,8 +12,8 @@ class DrinkViewController: UIViewController {
  
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var drinkSlider: UISlider!
-    @IBOutlet weak var drinkSliderLbl: UILabel! 
+    @IBOutlet weak var drinkButtonTap: UIButton!
+    
 //    @IBOutlet weak var saveBtnLbl: UIButton!
     
     @IBOutlet weak var waterVolumeTextField: UITextField!
@@ -34,6 +34,8 @@ class DrinkViewController: UIViewController {
         super.viewDidLoad()
         createVolumePicker()
         createToolbar()
+        
+        drinkButtonTap.layer.cornerRadius = 5
     }
     
     

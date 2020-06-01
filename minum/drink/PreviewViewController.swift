@@ -23,7 +23,7 @@ class PreviewViewController: UIViewController {
        super.viewDidLoad()
        photoView.image = image
        // Do any additional setup after loading the view.
-       detectPhoto(image: photoView.image!)
+      // detectPhoto(image: photoView.image!)
 //       detectPhoto(text: resultLabel.text!)
 //       view.showLoadingView(inView: view)
 
@@ -43,48 +43,48 @@ class PreviewViewController: UIViewController {
     dismiss(animated: true, completion: nil)
     
    }
-   func detectPhoto(image: UIImage) {
-       //load coreml model
-       guard let ciImage = CIImage(image: image) else {
-           fatalError("Couldn't convert UIImage to CIImage")
-       }
-       guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
-           fatalError("Can't load CoreML Model")
-       }
-       let request = VNCoreMLRequest(model: model) {
-           (vnRequest, error) in
-           print(vnRequest.results?.first as Any)
-           guard let results = vnRequest.results as?
-               [VNClassificationObservation], let firstResult = results.first else {
-                   fatalError("Unexpected result")
-           }
-           DispatchQueue.main.async {
-            
-               if(firstResult.identifier.contains("water bottle")){
-                   self.name = "water_bottle"
-               }else if(firstResult.identifier.contains("water jug")){
-                   self.name = "water_bottle"
-               }else{
-                  self.name = "Bukan kendaraan dunia"
-               }
-             
-             self.ResultPhoto.image = UIImage(named: self.name)
-//             self.resultLabel.text = UILabel(named: self.name)
-
-            
-
-           }
-       }
-
-       let handler = VNImageRequestHandler(ciImage: ciImage)
-       DispatchQueue.global(qos:
-           DispatchQoS.QoSClass.userInteractive).async {
-               do {
-                   try handler.perform([request])
-               } catch {
-                   print(error)
-               }
-       }
-   }
+//   func detectPhoto(image: UIImage) {
+//       //load coreml model
+//       guard let ciImage = CIImage(image: image) else {
+//           fatalError("Couldn't convert UIImage to CIImage")
+//       }
+//       guard let model = try? VNCoreMLModel(for: "Inceptionv3().model") else {
+//           fatalError("Can't load CoreML Model")
+//       }
+//       let request = VNCoreMLRequest(model: model) {
+//           (vnRequest, error) in
+//           print(vnRequest.results?.first as Any)
+//           guard let results = vnRequest.results as?
+//               [VNClassificationObservation], let firstResult = results.first else {
+//                   fatalError("Unexpected result")
+//           }
+//           DispatchQueue.main.async {
+//
+//               if(firstResult.identifier.contains("water bottle")){
+//                   self.name = "water_bottle"
+//               }else if(firstResult.identifier.contains("water jug")){
+//                   self.name = "water_bottle"
+//               }else{
+//                  self.name = "Bukan kendaraan dunia"
+//               }
+//
+//             self.ResultPhoto.image = UIImage(named: self.name)
+////             self.resultLabel.text = UILabel(named: self.name)
+//
+//
+//
+//           }
+//       }
+//
+//       let handler = VNImageRequestHandler(ciImage: ciImage)
+//       DispatchQueue.global(qos:
+//           DispatchQoS.QoSClass.userInteractive).async {
+//               do {
+//                   try handler.perform([request])
+//               } catch {
+//                   print(error)
+//               }
+//       }
+//   }
 }
 

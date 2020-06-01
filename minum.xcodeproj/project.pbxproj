@@ -21,7 +21,7 @@
 		60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */; };
 		60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D96246AF775003764ED /* OnBoarding.storyboard */; };
 		60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D98246AF785003764ED /* OnBoardingViewController.swift */; };
-		6B3C72712484C10000FD7949 /* KendaraanDuniawi.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B3C72702484C10000FD7949 /* KendaraanDuniawi.mlmodel */; };
+		6B3C72752484D09D00FD7949 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */; };
 		6B3EC514247E573600B9AD75 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC513247E573600B9AD75 /* Profile.storyboard */; };
 		6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64869E247F9D5000A87490 /* CameraViewController.swift */; };
 		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
@@ -47,7 +47,7 @@
 		60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		60AF9D96246AF775003764ED /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		60AF9D98246AF785003764ED /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		6B3C72702484C10000FD7949 /* KendaraanDuniawi.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = KendaraanDuniawi.mlmodel; sourceTree = "<group>"; };
+		6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		6B3EC513247E573600B9AD75 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		6B64869E247F9D5000A87490 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		60AF9D71246AB51B003764ED /* minum */ = {
 			isa = PBXGroup;
 			children = (
-				6B3C72702484C10000FD7949 /* KendaraanDuniawi.mlmodel */,
+				6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */,
 				6099462224745042008F62AA /* profile */,
 				6099462124744FFA008F62AA /* history */,
 				6099462024744FED008F62AA /* drink */,
@@ -290,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */,
+				6B3C72752484D09D00FD7949 /* Inceptionv3.mlmodel in Sources */,
 				60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */,
 				60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */,
 				60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */,
@@ -299,7 +300,6 @@
 				60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */,
 				60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */,
 				60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */,
-				6B3C72712484C10000FD7949 /* KendaraanDuniawi.mlmodel in Sources */,
 				6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

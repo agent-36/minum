@@ -10,12 +10,13 @@ import Vision
 
 class PreviewViewController: UIViewController {
    
-   @IBOutlet weak var ResultPhoto: UIImageView!
-   @IBOutlet weak var photoView: UIImageView!
-   @IBOutlet weak var resultLabel: UILabel!
+
+    @IBOutlet weak var ResultPhoto: UIImageView!
+    @IBOutlet weak var photoView: UIImageView!
+//   @IBOutlet weak var resultLabel: UILabel!
     
    var image:UIImage!
-   var text:UILabel!
+//   var text:UILabel!
    var name:String!
    
    override func viewDidLoad() {
@@ -25,28 +26,29 @@ class PreviewViewController: UIViewController {
        detectPhoto(image: photoView.image!)
 //       detectPhoto(text: resultLabel.text!)
 //       view.showLoadingView(inView: view)
-       name = "nodata"
+
    }
    
    
    @IBAction func cancelButton(_ sender: Any) {
        dismiss(animated: true, completion: nil)
    }
+    
    @IBAction func saveButton(_ sender: Any) {
        guard let imageToSave = image else {
            return
        }
      
-       
-       UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
-       dismiss(animated: true, completion: nil)
+    UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
+    dismiss(animated: true, completion: nil)
+    
    }
    func detectPhoto(image: UIImage) {
        //load coreml model
        guard let ciImage = CIImage(image: image) else {
            fatalError("Couldn't convert UIImage to CIImage")
        }
-       guard let model = try? VNCoreMLModel(for: KendaraanDuniawi().model) else {
+       guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
            fatalError("Can't load CoreML Model")
        }
        let request = VNCoreMLRequest(model: model) {
@@ -57,15 +59,16 @@ class PreviewViewController: UIViewController {
                    fatalError("Unexpected result")
            }
            DispatchQueue.main.async {
-               if(firstResult.identifier.contains("Glass")){
-                   self.name = "Glass"
-               }else if(firstResult.identifier.contains("Bottle")){
-                   self.name = "Bottle"
+            
+               if(firstResult.identifier.contains("water bottle")){
+                   self.name = "water_bottle"
+               }else if(firstResult.identifier.contains("water jug")){
+                   self.name = "water_bottle"
                }else{
                   self.name = "Bukan kendaraan dunia"
                }
              
-//             self.ResultPhoto.image = UIImage(named: self.name)
+             self.ResultPhoto.image = UIImage(named: self.name)
 //             self.resultLabel.text = UILabel(named: self.name)
 
             

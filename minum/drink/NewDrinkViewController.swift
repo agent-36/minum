@@ -16,7 +16,7 @@ class NewDrinkViewController: UIViewController {
         var captureSession = AVCaptureSession()
         var backCamera: AVCaptureDevice?
         var currentDevice: AVCaptureDevice?
-        
+    
         var photoOutput: AVCapturePhotoOutput?
         
         var cameraPreviewLayer:AVCaptureVideoPreviewLayer?

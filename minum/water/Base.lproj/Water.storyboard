@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ArH-cr-l9R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,13 +11,14 @@
         <scene sceneID="44R-sS-BL2">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="lEo-pA-OSv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="h9i-pM-6ev"/>
                     <navigationItem key="navigationItem" id="ZCQ-lN-F0O"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THL-03-9hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="-975"/>
+            <point key="canvasLocation" x="1664" y="-219"/>
         </scene>
-        <!--Water-->
+        <!--My Water-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="WaterViewController" customModule="minum" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,19 +46,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-tk-WWC">
-                                <rect key="frame" x="10" y="112" width="404" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bx-oj-zzj">
-                                <rect key="frame" x="10" y="61" width="404" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000/2000 ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vU-v6-7KU">
                                 <rect key="frame" x="140" y="493" width="144" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,15 +53,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-Oh-1zE">
-                                <rect key="frame" x="321" y="51" width="73" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" image="gear" catalog="system"/>
-                                <connections>
-                                    <segue destination="lEo-pA-OSv" kind="presentation" modalPresentationStyle="fullScreen" id="OEr-rs-roG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGZ-MK-BxI">
                                 <rect key="frame" x="10" y="623" width="389" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,30 +65,74 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9vi-hE-KHN" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-150" id="2bp-Fe-wmm"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Asz-tk-WWC" secondAttribute="trailing" id="Bwo-f6-mH6"/>
-                            <constraint firstItem="Asz-tk-WWC" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="By9-vt-Gl9"/>
                             <constraint firstItem="9vi-hE-KHN" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Igk-xs-oeD"/>
                             <constraint firstItem="Df4-GP-Z99" firstAttribute="top" secondItem="9vi-hE-KHN" secondAttribute="bottom" constant="20" id="J7c-EU-NWl"/>
                             <constraint firstItem="GMq-S3-xWc" firstAttribute="centerY" secondItem="9vi-hE-KHN" secondAttribute="centerY" id="N87-Dl-V3k"/>
                             <constraint firstItem="GMq-S3-xWc" firstAttribute="centerX" secondItem="9vi-hE-KHN" secondAttribute="centerX" id="WNo-2S-5z6"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Df4-GP-Z99" secondAttribute="trailing" constant="16" id="erJ-cs-ytm"/>
                             <constraint firstItem="Df4-GP-Z99" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="qn3-r2-q7e"/>
-                            <constraint firstItem="Asz-tk-WWC" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="w5t-gQ-xFx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Water" image="shield.fill" catalog="system" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="My Water" id="FcI-LE-gzY"/>
                     <connections>
                         <outlet property="lapView" destination="9vi-hE-KHN" id="4fz-J1-t5K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3484.057971014493" y="-788.16964285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2ON-MP-lYL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ArH-cr-l9R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xhc-dW-FwE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sot-FG-b6I" kind="relationship" relationship="viewControllers" id="jpu-7s-Pfy"/>
+                        <segue destination="gSF-4Y-UFc" kind="relationship" relationship="viewControllers" id="q9B-wx-Ke8"/>
+                        <segue destination="lEo-pA-OSv" kind="relationship" relationship="viewControllers" id="Svm-HI-B6s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ez-FL-2jf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1663.7681159420292" y="-788.16964285714278"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="7wH-lu-auf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="gSF-4Y-UFc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" id="BSx-DF-ZXL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYK-n8-4db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="-394"/>
+        </scene>
+        <!--Water-->
+        <scene sceneID="EVP-ha-0Od">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sot-FG-b6I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Water" image="shield.fill" catalog="system" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BXi-9v-aGC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="fEx-bv-7Np"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnN-Mk-M5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.913043478261" y="-788.16964285714278"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="getstarted-btn" width="366" height="54"/>
         <image name="shield.fill" catalog="system" width="128" height="115"/>
     </resources>

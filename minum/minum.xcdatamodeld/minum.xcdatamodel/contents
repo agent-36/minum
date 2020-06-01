@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Drink" representedClassName="Drink" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <relationship name="history" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="History" inverseName="drink" inverseEntity="History"/>
+        <relationship name="history" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="History" inverseName="drink" inverseEntity="History"/>
     </entity>
     <entity name="History" representedClassName="History" syncable="YES" codeGenerationType="class">
         <attribute name="hours" optional="YES" attributeType="String"/>
@@ -11,7 +11,7 @@
         <relationship name="drink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="history" inverseEntity="Drink"/>
     </entity>
     <elements>
-        <element name="Drink" positionX="-68.4609375" positionY="-157.15625" width="128" height="73"/>
-        <element name="History" positionX="-18" positionY="36" width="128" height="103"/>
+        <element name="Drink" positionX="-154.71875" positionY="-203.16015625" width="128" height="73"/>
+        <element name="History" positionX="125.5859375" positionY="-184.1171875" width="128" height="103"/>
     </elements>
 </model>

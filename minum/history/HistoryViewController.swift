@@ -19,10 +19,15 @@ class HistoryViewController: UIViewController {
         historyTable.dataSource = self
         historyTable.delegate = self
 DemoCoreData()
+        print("elmy: \(applicationDirectoryPath())")
     }
     
    
 
+    
+    func applicationDirectoryPath() -> String {
+        return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String
+    }
 }
 
 

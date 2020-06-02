@@ -97,13 +97,8 @@ class PreviewViewController: UIViewController {
     guard let imageToSave = image else {
                return
            }
-//           guard let newData = CoreDataManager.shared.createFood(name: name, image: imageToSave) else { return }
-//           print("Created \(newData)")
-           
-//           UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
-//           dismiss(animated: true, completion: nil)
-    print(imageToSave as Any)
-    print(selectVolume as Any)
+    
+    guard let newData = CoreDataManager.shared.createDrink(image: imageToSave, amount: selectVolume!) else { return }
        }
 
     

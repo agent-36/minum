@@ -7,6 +7,7 @@
 //
 
 import CoreData
+import UIKit
 
 struct CoreDataManager {
 
@@ -25,16 +26,33 @@ struct CoreDataManager {
     }()
     
     @discardableResult
-    func createDrink(date: Date) -> Drink? {
+    func createDrink(image: UIImage, amount: String) -> Drink? {
         let context = persistentContainer.viewContext
         
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, dd LLLL"
+        let current_date = dateFormatter.string(from: date)
+    
+        let idFormatter = DateFormatter()
+        idFormatter.dateFormat =  "yyyyMMdd"
+        let id = idFormatter.string(from: date)
+        
         let drink = Drink(context: context)
-        drink.date = "Today"
+        drink.id = id
+        drink.date = current_date
         
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minute = calendar.component(.minute, from: date)
+       
+        print("jam \(hour) : \(minute)")
+        
+        let imageData = image.jpegData(compressionQuality: 1.0)
         let history = History(context: context)
-        history.amount = 100
-        history.hours = "17.00"
-        
+        history.amount = Int32(amount) ?? 0
+        history.hours = "\(hour):\(minute)"
+        history.photo = imageData
         drink.history = NSSet.init(array: [history, history])
 
         do {
@@ -62,27 +80,13 @@ struct CoreDataManager {
         return nil
     }
 
-    func fetchHistories() -> [History]? {
-           let context = persistentContainer.viewContext
 
-           let fetchRequest = NSFetchRequest<History>(entityName: "History")
-
-           do {
-               let histories = try context.fetch(fetchRequest)
-               return histories
-           } catch let fetchError {
-               print("Failed to fetch companies: \(fetchError)")
-           }
-
-           return nil
-       }
-
-    func fetchDrink(withName name: String) -> Drink? {
+    func fetchDrink(withName id: String) -> Drink? {
         let context = persistentContainer.viewContext
 
         let fetchRequest = NSFetchRequest<Drink>(entityName: "Drink")
         fetchRequest.fetchLimit = 1
-        fetchRequest.predicate = NSPredicate(format: "name == %@", name)
+        fetchRequest.predicate = NSPredicate(format: "id == %@", id)
 
         do {
             let drinks = try context.fetch(fetchRequest)

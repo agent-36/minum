@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--History View Controller-->
+        <!--History-->
         <scene sceneID="7vB-M5-hEL">
             <objects>
                 <viewController id="JUq-gt-2L9" customClass="HistoryViewController" customModule="minum" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="890" y="-6"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+    </resources>
 </document>

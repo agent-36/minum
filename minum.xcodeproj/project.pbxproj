@@ -24,19 +24,6 @@
 		60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */; };
 		60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D96246AF775003764ED /* OnBoarding.storyboard */; };
 		60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D98246AF785003764ED /* OnBoardingViewController.swift */; };
-
-		6B3C72752484D09D00FD7949 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */; };
-		6B3EC514247E573600B9AD75 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC513247E573600B9AD75 /* Profile.storyboard */; };
-		6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64869E247F9D5000A87490 /* CameraViewController.swift */; };
-		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
-		6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A22480C65E00A87490 /* PreviewViewController.swift */; };
-
-
-/* Begin PBXFileReference section */
-		0250CD6B248144510031825D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		0250CD6D248145E50031825D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		026C0FBB24824C970003ACCE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		56151643F631137A3C72496A /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
 		6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64869E247F9D5000A87490 /* CameraViewController.swift */; };
 		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
 		6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A22480C65E00A87490 /* PreviewViewController.swift */; };
@@ -44,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0250CD6B248144510031825D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		0250CD6D248145E50031825D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		026C0FBB24824C970003ACCE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		17C06A774542CFABD41EE3DE /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4DD4E4BDE7D13B407F0775 /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
 		609946252474509B008F62AA /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
@@ -62,15 +52,7 @@
 		60AF9D8F246AC6E3003764ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		60AF9D96246AF775003764ED /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		60AF9D98246AF785003764ED /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-
 		6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		6B3EC513247E573600B9AD75 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		6B64869E247F9D5000A87490 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkViewController.swift; sourceTree = "<group>"; };
-		6B6486A22480C65E00A87490 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-
-		94D6BA364A604892118BBFA4 /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
-		A010684CE7D553975933E34A /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B64869E247F9D5000A87490 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkViewController.swift; sourceTree = "<group>"; };
 		6B6486A22480C65E00A87490 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
@@ -167,10 +149,8 @@
 		60AF9D71246AB51B003764ED /* minum */ = {
 			isa = PBXGroup;
 			children = (
-
 				0250CD6A248143FB0031825D /* settings */,
 				6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */,
-
 				6099462224745042008F62AA /* profile */,
 				6099462124744FFA008F62AA /* history */,
 				6099462024744FED008F62AA /* drink */,
@@ -335,7 +315,6 @@
 				60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */,
 				0250CD6E248145E50031825D /* SettingsViewController.swift in Sources */,
 				6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +480,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPBC38L52Y;
-
 				INFOPLIST_FILE = minum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

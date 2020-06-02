@@ -28,6 +28,9 @@
 		60CF8B4A24863FD10045535B /* CoreClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */; };
 		60CF8B4B248640A70045535B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4524860F330045535B /* HistoryTableViewCell.swift */; };
 		60CF8B4C248640BB0045535B /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CF8B4624860F330045535B /* HistoryTableViewCell.xib */; };
+		60CF8B4E248689970045535B /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4D248689970045535B /* HistoryDetailViewController.swift */; };
+		60CF8B5124868D360045535B /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4F24868D360045535B /* HistoryDetailTableViewCell.swift */; };
+		60CF8B5224868D360045535B /* HistoryDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CF8B5024868D360045535B /* HistoryDetailTableViewCell.xib */; };
 		6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64869E247F9D5000A87490 /* CameraViewController.swift */; };
 		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
 		6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A22480C65E00A87490 /* PreviewViewController.swift */; };
@@ -58,6 +61,9 @@
 		60B02737247DC08100F44A5E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		60CF8B4524860F330045535B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		60CF8B4624860F330045535B /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		60CF8B4D248689970045535B /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		60CF8B4F24868D360045535B /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		60CF8B5024868D360045535B /* HistoryDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDetailTableViewCell.xib; sourceTree = "<group>"; };
 		6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CoreClassifier.mlmodel; sourceTree = "<group>"; };
 		6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		6B64869E247F9D5000A87490 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				60B02737247DC08100F44A5E /* CoreDataManager.swift */,
 				60CF8B4524860F330045535B /* HistoryTableViewCell.swift */,
 				60CF8B4624860F330045535B /* HistoryTableViewCell.xib */,
+				60CF8B4D248689970045535B /* HistoryDetailViewController.swift */,
+				60CF8B4F24868D360045535B /* HistoryDetailTableViewCell.swift */,
+				60CF8B5024868D360045535B /* HistoryDetailTableViewCell.xib */,
 			);
 			path = history;
 			sourceTree = "<group>";
@@ -160,7 +169,6 @@
 		60AF9D71246AB51B003764ED /* minum */ = {
 			isa = PBXGroup;
 			children = (
-				0250CD6A248143FB0031825D /* settings */,
 				6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */,
 				6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */,
 				0250CD6A248143FB0031825D /* settings */,
@@ -261,6 +269,7 @@
 				60994628247450A6008F62AA /* Drink.storyboard in Resources */,
 				60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */,
 				60AF9D7C246AB51B003764ED /* Water.storyboard in Resources */,
+				60CF8B5224868D360045535B /* HistoryDetailTableViewCell.xib in Resources */,
 				60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */,
 				609946262474509B008F62AA /* History.storyboard in Resources */,
 				60CF8B4C248640BB0045535B /* HistoryTableViewCell.xib in Resources */,
@@ -317,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CF8B4E248689970045535B /* HistoryDetailViewController.swift in Sources */,
 				60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */,
 				60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */,
 				60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */,
@@ -327,6 +337,7 @@
 				60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */,
 				60CF8B4924863FB00045535B /* CoreDataManager.swift in Sources */,
 				60CF8B4B248640A70045535B /* HistoryTableViewCell.swift in Sources */,
+				60CF8B5124868D360045535B /* HistoryDetailTableViewCell.swift in Sources */,
 				60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */,
 				60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */,
 				60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */,
@@ -477,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6SVV7LMGJ;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
 				INFOPLIST_FILE = minum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TPBC38L52Y;
+				DEVELOPMENT_TEAM = TVFQAT4MZP;
 				INFOPLIST_FILE = minum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

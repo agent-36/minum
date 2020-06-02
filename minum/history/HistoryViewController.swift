@@ -12,10 +12,14 @@ import CoreData
 class HistoryViewController: UIViewController {
     
     @IBOutlet weak var historyTable: UITableView!
-    var fetchedResultsController: NSFetchedResultsController<Drink>!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        guard let newData = CoreDataManager.shared.createDrink(image: UIImage(), amount: 250) else { return }
+        
         historyTable.dataSource = self
         historyTable.delegate = self
         historyTable.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryCell")
@@ -37,7 +41,8 @@ extension HistoryViewController: UITableViewDelegate{
 
 extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        let data = CoreDataManager.shared.fetchDrinks()
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

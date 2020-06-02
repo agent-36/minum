@@ -49,16 +49,31 @@
             </objects>
             <point key="canvasLocation" x="109" y="-3"/>
         </scene>
-        <!--View Controller-->
+        <!--History Detail View Controller-->
         <scene sceneID="m7Q-9J-PGv">
             <objects>
-                <viewController id="2QV-GF-FLQ" sceneMemberID="viewController">
+                <viewController id="2QV-GF-FLQ" customClass="HistoryDetailViewController" customModule="minum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XYf-Cq-iej">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KC3-go-L6i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j7M-XP-ERO" firstAttribute="bottom" secondItem="KC3-go-L6i" secondAttribute="bottom" id="E3d-Oc-qLb"/>
+                            <constraint firstItem="KC3-go-L6i" firstAttribute="leading" secondItem="j7M-XP-ERO" secondAttribute="leading" id="Vuy-RC-SFK"/>
+                            <constraint firstItem="KC3-go-L6i" firstAttribute="top" secondItem="j7M-XP-ERO" secondAttribute="top" id="W5q-kb-WAH"/>
+                            <constraint firstItem="j7M-XP-ERO" firstAttribute="trailing" secondItem="KC3-go-L6i" secondAttribute="trailing" id="YFM-eS-dDp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j7M-XP-ERO"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="KC3-go-L6i" id="JmZ-Re-ths"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj3-5V-CvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

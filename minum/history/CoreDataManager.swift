@@ -28,14 +28,14 @@ struct CoreDataManager {
     func createDrink(date: Date) -> Drink? {
         let context = persistentContainer.viewContext
         
-        let drink = NSEntityDescription.insertNewObject(forEntityName: "Drink", into: context) as! Drink // NSManagedObject
-
-        drink.date = date
-        drink.history
+        let drink = Drink(context: context)
+        drink.date = "Today"
         
-//        drink.history?.hours = "17:00"
-//        drink.history?.total = 120
+        let history = History(context: context)
+        history.amount = 100
+        history.hours = "17.00"
         
+        drink.history = NSSet.init(array: [history, history])
 
         do {
             try context.save()
@@ -61,6 +61,21 @@ struct CoreDataManager {
 
         return nil
     }
+
+    func fetchHistories() -> [History]? {
+           let context = persistentContainer.viewContext
+
+           let fetchRequest = NSFetchRequest<History>(entityName: "History")
+
+           do {
+               let histories = try context.fetch(fetchRequest)
+               return histories
+           } catch let fetchError {
+               print("Failed to fetch companies: \(fetchError)")
+           }
+
+           return nil
+       }
 
     func fetchDrink(withName name: String) -> Drink? {
         let context = persistentContainer.viewContext

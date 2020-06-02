@@ -18,12 +18,9 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         historyTable.dataSource = self
         historyTable.delegate = self
-DemoCoreData()
-        print("elmy: \(applicationDirectoryPath())")
+        historyTable.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryCell")
+        DemoCoreData()
     }
-    
-   
-
     
     func applicationDirectoryPath() -> String {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String
@@ -35,16 +32,13 @@ DemoCoreData()
 func DemoCoreData() {
     // Create
     guard let newDrink = CoreDataManager.shared.createDrink(date: Date().addingTimeInterval(5 * 60 * 24 * 100)) else { return }
-    print("Created \(newDrink)")
 
     guard let drinks = CoreDataManager.shared.fetchDrinks() else { return }
 
-    
-
-    print("Number : \(drinks)")
-
-    print("Number drinks: \(drinks.count)")
-    print("date drinks: \(String(describing: drinks.first?.date))")
+    guard let histories = CoreDataManager.shared.fetchHistories() else { return }
+    for history in histories{
+        print("jumlah \(history.ofDrink?.date),, \(history.amount)")
+    }
 }
 
 extension HistoryViewController: UITableViewDelegate{
@@ -54,16 +48,23 @@ extension HistoryViewController: UITableViewDelegate{
 
 extension HistoryViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        100
+        10
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let drinks = CoreDataManager.shared.fetchDrinks()
-    let dateFormatterPrint = DateFormatter()
-    dateFormatterPrint.dateFormat = "MMM dd,yyyy"
-        ///let drink = fetchedResultsController.object(at: indexPath)
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-        cell.textLabel?.text = "\(dateFormatterPrint.string(from: drinks?.last?.date ?? Date()) )"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        let drinks: [Drink] = CoreDataManager.shared.fetchDrinks()!
+//    let dateFormatterPrint = DateFormatter()
+//    dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+//        ///let drink = fetchedResultsController.object(at: indexPath)
+//        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+//        cell.textLabel?.text = "\(dateFormatterPrint.string(from: drinks?.last?.date ?? Date()) )"
+//
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! HistoryTableViewCell
+                
+        cell.desc.text = "You drank 1980 ml water"
+        cell.date.text = "today"
+                 
+
         return cell
     }
     

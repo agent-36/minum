@@ -16,26 +16,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-1u-7iz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="75" width="414" height="821"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgS-tp-zAl">
+                                <rect key="frame" x="16" y="54" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iiZ-uV-YKb" firstAttribute="bottom" secondItem="UOG-1u-7iz" secondAttribute="bottom" id="HL7-jH-pxs"/>
-                            <constraint firstItem="UOG-1u-7iz" firstAttribute="leading" secondItem="iiZ-uV-YKb" secondAttribute="leading" id="QGz-2f-PNT"/>
-                            <constraint firstItem="UOG-1u-7iz" firstAttribute="top" secondItem="iiZ-uV-YKb" secondAttribute="top" id="dGM-xT-O9N"/>
-                            <constraint firstItem="iiZ-uV-YKb" firstAttribute="trailing" secondItem="UOG-1u-7iz" secondAttribute="trailing" id="nlN-D9-MxX"/>
+                            <constraint firstItem="zgS-tp-zAl" firstAttribute="top" secondItem="iiZ-uV-YKb" secondAttribute="top" constant="10" id="1zT-dY-dEF"/>
+                            <constraint firstItem="zgS-tp-zAl" firstAttribute="leading" secondItem="iiZ-uV-YKb" secondAttribute="leading" constant="16" id="Euj-uK-2yi"/>
+                            <constraint firstItem="UOG-1u-7iz" firstAttribute="top" secondItem="zgS-tp-zAl" secondAttribute="bottom" id="SxI-9c-FyO"/>
+                            <constraint firstItem="UOG-1u-7iz" firstAttribute="leading" secondItem="iiZ-uV-YKb" secondAttribute="leading" id="TE0-ma-Z65"/>
+                            <constraint firstAttribute="bottom" secondItem="UOG-1u-7iz" secondAttribute="bottom" id="kDG-KY-GUt"/>
+                            <constraint firstItem="UOG-1u-7iz" firstAttribute="trailing" secondItem="iiZ-uV-YKb" secondAttribute="trailing" id="ypv-UZ-9GO"/>
+                            <constraint firstItem="iiZ-uV-YKb" firstAttribute="trailing" secondItem="zgS-tp-zAl" secondAttribute="trailing" constant="16" id="zt8-N9-O2c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iiZ-uV-YKb"/>
                     </view>
                     <connections>
                         <outlet property="historyTable" destination="UOG-1u-7iz" id="ZYR-D4-9wC"/>
+                        <segue destination="2QV-GF-FLQ" kind="presentation" id="jI4-Pe-Ik8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTY-jZ-6HJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="109" y="-3"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m7Q-9J-PGv">
+            <objects>
+                <viewController id="2QV-GF-FLQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XYf-Cq-iej">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="j7M-XP-ERO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hj3-5V-CvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="-6"/>
         </scene>
     </scenes>
 </document>

@@ -11,7 +11,9 @@
         <scene sceneID="44R-sS-BL2">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="lEo-pA-OSv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="h9i-pM-6ev"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="h9i-pM-6ev">
+                        <color key="badgeColor" red="0.35427510740000001" green="0.61519300939999999" blue="0.97350102660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="ZCQ-lN-F0O"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THL-03-9hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -58,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="getstarted-btn"/>
                                 <connections>
-                                    <action selector="goToDrink:" destination="9pv-A4-QxB" eventType="touchUpInside" id="eyZ-Ea-bVJ"/>
+                                    <segue destination="us2-UA-4lt" kind="show" id="mRl-ch-3Bz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,12 +85,23 @@
             </objects>
             <point key="canvasLocation" x="3484.057971014493" y="-788.16964285714278"/>
         </scene>
+        <!--Drink-->
+        <scene sceneID="wS1-sA-Wvm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Drink" id="us2-UA-4lt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uh2-Bu-8Kz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-gx-VZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4287" y="-890"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ON-MP-lYL">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ArH-cr-l9R" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xhc-dW-FwE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -106,7 +119,9 @@
         <scene sceneID="7wH-lu-auf">
             <objects>
                 <viewControllerPlaceholder storyboardName="History" id="gSF-4Y-UFc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="BSx-DF-ZXL"/>
+                    <tabBarItem key="tabBarItem" title="History" image="doc.plaintext" catalog="system" id="BSx-DF-ZXL">
+                        <color key="badgeColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYK-n8-4db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,6 +148,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="getstarted-btn" width="366" height="54"/>
         <image name="shield.fill" catalog="system" width="128" height="115"/>
     </resources>

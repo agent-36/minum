@@ -42,7 +42,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="historyTable" destination="UOG-1u-7iz" id="ZYR-D4-9wC"/>
-                        <segue destination="2QV-GF-FLQ" kind="presentation" id="jI4-Pe-Ik8"/>
+                        <segue destination="2QV-GF-FLQ" kind="presentation" identifier="toDetail" id="jI4-Pe-Ik8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTY-jZ-6HJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

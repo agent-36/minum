@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func goToHistory(_ sender: UIButton) {
             let storyboard = UIStoryboard(name: "Drink", bundle: nil)
-            let vc = storyboard.instantiateInitialViewController() as? DrinkViewController ?? UIViewController()
+            let vc = storyboard.instantiateInitialViewController() as? NewDrinkViewController ?? UIViewController()
        //vc.modalPresentationStyle = .formSheet
             present(vc, animated: true, completion: nil)
        

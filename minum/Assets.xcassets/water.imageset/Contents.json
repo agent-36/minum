@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icon-my-water.png",
+      "filename" : "water.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "water@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "water@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

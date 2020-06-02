@@ -12,6 +12,8 @@ class HistoryDetailViewController: UIViewController {
 
     @IBOutlet weak var tableview: UITableView!
     
+    var id: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
@@ -29,19 +31,18 @@ extension HistoryDetailViewController: UITableViewDelegate{
 
 extension HistoryDetailViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let drinks = CoreDataManager.shared.fetchDrinks()
-       
+        let data = CoreDataManager.shared.fetchDrink(withName: id)
+        let history: [History] = (data!.history!.allObjects as? [History])!
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath) as! HistoryDetailTableViewCell
-//        let arr: [History] = (drinks!.last!.history!.allObjects as? [History])!
-//    
-//        cell.desc.text = "You drank \(arr.first!.amount) ml water"
-//        cell.date.text = "\(drinks?.last?.date ?? "nodata")"
-                 
+       
+        cell.desc.text = "You drink \(history.last!.amount) water"
+        cell.hour.text = "\(history.last!.hours!)"
+        cell.photo.image = UIImage(data: history.last!.photo!)
 
         return cell
     }

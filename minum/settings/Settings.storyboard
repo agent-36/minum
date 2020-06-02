@@ -9,7 +9,7 @@
         <!--Setting-->
         <scene sceneID="84b-xK-vdj">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="r5P-Sh-te4" customClass="TableViewController" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="r5P-Sh-te4" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2JH-KP-DqV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -108,7 +108,7 @@ extension DrinkViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         selectVolume = volumes[row]
-        waterVolumeTextField.text = selectVolume 
+        waterVolumeTextField.text = selectVolume
     }
     
 }

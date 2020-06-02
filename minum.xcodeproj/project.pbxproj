@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		0250CD6C248144510031825D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0250CD6B248144510031825D /* Settings.storyboard */; };
 		0250CD6E248145E50031825D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250CD6D248145E50031825D /* SettingsViewController.swift */; };
-		026C0FBC24824C970003ACCE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 026C0FBB24824C970003ACCE /* Settings.bundle */; };
+		570F3FD1CC61255CFAEC2702 /* Pods_minum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8265DFF3135E8ED2EE21C6 /* Pods_minum.framework */; };
 		609946262474509B008F62AA /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609946252474509B008F62AA /* History.storyboard */; };
 		60994628247450A6008F62AA /* Drink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60994627247450A6008F62AA /* Drink.storyboard */; };
 		60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D72246AB51B003764ED /* AppDelegate.swift */; };
 		60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D74246AB51B003764ED /* SceneDelegate.swift */; };
 		60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D76246AB51B003764ED /* WaterViewController.swift */; };
-		60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D78246AB51B003764ED /* DrinkViewController.swift */; };
 		60AF9D7C246AB51B003764ED /* Water.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D7A246AB51B003764ED /* Water.storyboard */; };
 		60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D7D246AB51B003764ED /* minum.xcdatamodeld */; };
 		60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D80246AB51F003764ED /* Assets.xcassets */; };
@@ -25,30 +24,28 @@
 		60AF9D97246AF775003764ED /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AF9D96246AF775003764ED /* OnBoarding.storyboard */; };
 		60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF9D98246AF785003764ED /* OnBoardingViewController.swift */; };
 		60CF8B4924863FB00045535B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B02737247DC08100F44A5E /* CoreDataManager.swift */; };
-		60CF8B4A24863FD10045535B /* CoreClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */; };
 		60CF8B4B248640A70045535B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4524860F330045535B /* HistoryTableViewCell.swift */; };
 		60CF8B4C248640BB0045535B /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CF8B4624860F330045535B /* HistoryTableViewCell.xib */; };
 		60CF8B4E248689970045535B /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4D248689970045535B /* HistoryDetailViewController.swift */; };
 		60CF8B5124868D360045535B /* HistoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF8B4F24868D360045535B /* HistoryDetailTableViewCell.swift */; };
 		60CF8B5224868D360045535B /* HistoryDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CF8B5024868D360045535B /* HistoryDetailTableViewCell.xib */; };
-		6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64869E247F9D5000A87490 /* CameraViewController.swift */; };
+		6B05D8072486844200422784 /* NewImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B05D8062486844200422784 /* NewImageClassifier.mlmodel */; };
+		6B05D8092486A4AA00422784 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05D8082486A4AA00422784 /* DrinkViewController.swift */; };
 		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
 		6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A22480C65E00A87490 /* PreviewViewController.swift */; };
-		D74E34854F6337567F32309D /* Pods_minum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E53008AFAA331D2FD32DDF2 /* Pods_minum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0250CD6B248144510031825D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		0250CD6D248145E50031825D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		026C0FBB24824C970003ACCE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		131D4FD445EB93605C62748F /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
+		4A608FCB6FD678B4D976047E /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
+		591B452303DF4557DBDCD689 /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
 		609946252474509B008F62AA /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		60994627247450A6008F62AA /* Drink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Drink.storyboard; sourceTree = "<group>"; };
 		60AF9D6F246AB51B003764ED /* minum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AF9D72246AB51B003764ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AF9D74246AB51B003764ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		60AF9D76246AB51B003764ED /* WaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewController.swift; sourceTree = "<group>"; };
-		60AF9D78246AB51B003764ED /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 		60AF9D7B246AB51B003764ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Water.storyboard; sourceTree = "<group>"; };
 		60AF9D7E246AB51B003764ED /* minum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minum.xcdatamodel; sourceTree = "<group>"; };
 		60AF9D80246AB51F003764ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,13 +61,11 @@
 		60CF8B4D248689970045535B /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		60CF8B4F24868D360045535B /* HistoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		60CF8B5024868D360045535B /* HistoryDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDetailTableViewCell.xib; sourceTree = "<group>"; };
-		6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CoreClassifier.mlmodel; sourceTree = "<group>"; };
-		6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		6B64869E247F9D5000A87490 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6B05D8062486844200422784 /* NewImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NewImageClassifier.mlmodel; sourceTree = "<group>"; };
+		6B05D8082486A4AA00422784 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 		6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkViewController.swift; sourceTree = "<group>"; };
 		6B6486A22480C65E00A87490 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		6E53008AFAA331D2FD32DDF2 /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E40AC40C256F3DFCB57136 /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8265DFF3135E8ED2EE21C6 /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74E34854F6337567F32309D /* Pods_minum.framework in Frameworks */,
+				570F3FD1CC61255CFAEC2702 /* Pods_minum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +85,6 @@
 			children = (
 				0250CD6B248144510031825D /* Settings.storyboard */,
 				0250CD6D248145E50031825D /* SettingsViewController.swift */,
-				026C0FBB24824C970003ACCE /* Settings.bundle */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -98,8 +92,8 @@
 		5C2A6F837F4D87962D8DB71C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C6E40AC40C256F3DFCB57136 /* Pods-minum.debug.xcconfig */,
-				131D4FD445EB93605C62748F /* Pods-minum.release.xcconfig */,
+				4A608FCB6FD678B4D976047E /* Pods-minum.debug.xcconfig */,
+				591B452303DF4557DBDCD689 /* Pods-minum.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -116,11 +110,10 @@
 		6099462024744FED008F62AA /* drink */ = {
 			isa = PBXGroup;
 			children = (
-				60AF9D78246AB51B003764ED /* DrinkViewController.swift */,
 				60994627247450A6008F62AA /* Drink.storyboard */,
-				6B64869E247F9D5000A87490 /* CameraViewController.swift */,
 				6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */,
 				6B6486A22480C65E00A87490 /* PreviewViewController.swift */,
+				6B05D8082486A4AA00422784 /* DrinkViewController.swift */,
 			);
 			path = drink;
 			sourceTree = "<group>";
@@ -154,7 +147,7 @@
 				60AF9D71246AB51B003764ED /* minum */,
 				60AF9D70246AB51B003764ED /* Products */,
 				5C2A6F837F4D87962D8DB71C /* Pods */,
-				E8E7995D2CE90021673AB5AF /* Frameworks */,
+				F5FA19D97A76416243704B15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,8 +162,7 @@
 		60AF9D71246AB51B003764ED /* minum */ = {
 			isa = PBXGroup;
 			children = (
-				6B3C72742484D09D00FD7949 /* Inceptionv3.mlmodel */,
-				6B05D7FC248634F400422784 /* CoreClassifier.mlmodel */,
+				6B05D8062486844200422784 /* NewImageClassifier.mlmodel */,
 				0250CD6A248143FB0031825D /* settings */,
 				6099462224745042008F62AA /* profile */,
 				6099462124744FFA008F62AA /* history */,
@@ -196,10 +188,10 @@
 			path = onboarding;
 			sourceTree = "<group>";
 		};
-		E8E7995D2CE90021673AB5AF /* Frameworks */ = {
+		F5FA19D97A76416243704B15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E53008AFAA331D2FD32DDF2 /* Pods_minum.framework */,
+				8A8265DFF3135E8ED2EE21C6 /* Pods_minum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,11 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AF9D88246AB51F003764ED /* Build configuration list for PBXNativeTarget "minum" */;
 			buildPhases = (
-				A7352275D04494D52C04382D /* [CP] Check Pods Manifest.lock */,
+				0966ADD0742AE182F259AC6F /* [CP] Check Pods Manifest.lock */,
 				60AF9D6B246AB51B003764ED /* Sources */,
 				60AF9D6C246AB51B003764ED /* Frameworks */,
 				60AF9D6D246AB51B003764ED /* Resources */,
-				340BAFDF53C678FF07419038 /* [CP] Embed Pods Frameworks */,
+				F8E33913EB7A2F08212FB511 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026C0FBC24824C970003ACCE /* Settings.bundle in Resources */,
 				60AF9D84246AB51F003764ED /* LaunchScreen.storyboard in Resources */,
 				60994628247450A6008F62AA /* Drink.storyboard in Resources */,
 				60AF9D81246AB51F003764ED /* Assets.xcassets in Resources */,
@@ -280,24 +271,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		340BAFDF53C678FF07419038 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7352275D04494D52C04382D /* [CP] Check Pods Manifest.lock */ = {
+		0966ADD0742AE182F259AC6F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,6 +293,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8E33913EB7A2F08212FB511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-minum/Pods-minum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -327,22 +318,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				60CF8B4E248689970045535B /* HistoryDetailViewController.swift in Sources */,
-				60AF9D79246AB51B003764ED /* DrinkViewController.swift in Sources */,
 				60AF9D77246AB51B003764ED /* WaterViewController.swift in Sources */,
 				60AF9D73246AB51B003764ED /* AppDelegate.swift in Sources */,
 				60AF9D75246AB51B003764ED /* SceneDelegate.swift in Sources */,
 				6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */,
 				6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */,
-				60CF8B4A24863FD10045535B /* CoreClassifier.mlmodel in Sources */,
 				60AF9D8E246ABAFB003764ED /* HistoryViewController.swift in Sources */,
 				60CF8B4924863FB00045535B /* CoreDataManager.swift in Sources */,
 				60CF8B4B248640A70045535B /* HistoryTableViewCell.swift in Sources */,
 				60CF8B5124868D360045535B /* HistoryDetailTableViewCell.swift in Sources */,
 				60AF9D99246AF785003764ED /* OnBoardingViewController.swift in Sources */,
+				6B05D8092486A4AA00422784 /* DrinkViewController.swift in Sources */,
 				60AF9D7F246AB51B003764ED /* minum.xcdatamodeld in Sources */,
 				60AF9D90246AC6E3003764ED /* ProfileViewController.swift in Sources */,
 				0250CD6E248145E50031825D /* SettingsViewController.swift in Sources */,
-				6B64869F247F9D5000A87490 /* CameraViewController.swift in Sources */,
+				6B05D8072486844200422784 /* NewImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +474,7 @@
 		};
 		60AF9D89246AB51F003764ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6E40AC40C256F3DFCB57136 /* Pods-minum.debug.xcconfig */;
+			baseConfigurationReference = 4A608FCB6FD678B4D976047E /* Pods-minum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,7 +493,7 @@
 		};
 		60AF9D8A246AB51F003764ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 131D4FD445EB93605C62748F /* Pods-minum.release.xcconfig */;
+			baseConfigurationReference = 591B452303DF4557DBDCD689 /* Pods-minum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

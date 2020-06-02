@@ -17,9 +17,6 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        guard let newData = CoreDataManager.shared.createDrink(image: UIImage(), amount: 250) else { return }
-        
         historyTable.dataSource = self
         historyTable.delegate = self
         historyTable.register(UINib(nibName: "HistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "HistoryCell")
@@ -29,8 +26,15 @@ class HistoryViewController: UIViewController {
     func applicationDirectoryPath() -> String {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        if (segue.identifier == "toDetail") {
+               let vc = segue.destination as! HistoryDetailViewController
+                vc.id = "20200602"
+           }
+    }
 }
-
 
 
 extension HistoryViewController: UITableViewDelegate{

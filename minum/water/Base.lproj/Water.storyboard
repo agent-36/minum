@@ -55,12 +55,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGZ-MK-BxI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-Pc-ce0">
                                 <rect key="frame" x="10" y="623" width="389" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="getstarted-btn"/>
+                                <color key="backgroundColor" red="0.35427510740000001" green="0.61519300939999999" blue="0.97350102660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Drink">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="us2-UA-4lt" kind="show" id="mRl-ch-3Bz"/>
+                                    <action selector="goToDrink:" destination="9pv-A4-QxB" eventType="touchUpInside" id="eXW-lE-Kje"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,6 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="My Water" id="FcI-LE-gzY"/>
                     <connections>
+                        <outlet property="drinkBtnlbl" destination="Tr4-Pc-ce0" id="zXS-vk-3fn"/>
                         <outlet property="lapView" destination="9vi-hE-KHN" id="4fz-J1-t5K"/>
                     </connections>
                 </viewController>
@@ -131,7 +136,7 @@
         <scene sceneID="EVP-ha-0Od">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sot-FG-b6I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Water" image="shield.fill" catalog="system" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Water" image="watertap" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BXi-9v-aGC">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -150,7 +155,6 @@
     <resources>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="getstarted-btn" width="366" height="54"/>
-        <image name="shield.fill" catalog="system" width="128" height="115"/>
+        <image name="watertap" width="18" height="24"/>
     </resources>
 </document>

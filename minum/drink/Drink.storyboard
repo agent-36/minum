@@ -113,6 +113,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveButton:" destination="u30-v9-0pj" eventType="touchUpInside" id="Pmz-9n-4Ca"/>
+                                    <segue destination="aiQ-YN-m9G" kind="presentation" modalPresentationStyle="fullScreen" id="fNZ-AM-oFj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Water (ml)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vgd-a6-wT0">
@@ -126,7 +127,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oo6-Is-qha">
-                                <rect key="frame" x="0.0" y="37" width="453" height="44"/>
+                                <rect key="frame" x="0.0" y="37" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Drink" id="UEq-LN-2aH">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="U0I-Xn-3OX">
@@ -193,4 +194,7 @@
             <point key="canvasLocation" x="569" y="126"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fNZ-AM-oFj"/>
+    </inferredMetricsTieBreakers>
 </document>

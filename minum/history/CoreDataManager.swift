@@ -26,7 +26,7 @@ struct CoreDataManager {
     }()
     
     @discardableResult
-    func createDrink(image: UIImage, amount: Int) -> Drink? {
+    func createDrink(image: UIImage, amount: String) -> Drink? {
         let context = persistentContainer.viewContext
         
         let date = Date()
@@ -36,7 +36,7 @@ struct CoreDataManager {
     
         let idFormatter = DateFormatter()
         idFormatter.dateFormat =  "yyyyMMdd"
-        let id = dateFormatter.string(from: date)
+        let id = idFormatter.string(from: date)
         
         let drink = Drink(context: context)
         drink.id = id
@@ -50,7 +50,7 @@ struct CoreDataManager {
         
         let imageData = image.jpegData(compressionQuality: 1.0)
         let history = History(context: context)
-        history.amount = Int32(amount)
+        history.amount = Int32(amount) ?? 0
         history.hours = "\(hour):\(minute)"
         history.photo = imageData
         drink.history = NSSet.init(array: [history, history])
@@ -80,27 +80,13 @@ struct CoreDataManager {
         return nil
     }
 
-    func fetchHistories() -> [History]? {
-           let context = persistentContainer.viewContext
 
-           let fetchRequest = NSFetchRequest<History>(entityName: "History")
-
-           do {
-               let histories = try context.fetch(fetchRequest)
-               return histories
-           } catch let fetchError {
-               print("Failed to fetch companies: \(fetchError)")
-           }
-
-           return nil
-       }
-
-    func fetchDrink(withName name: String) -> Drink? {
+    func fetchDrink(withName id: String) -> Drink? {
         let context = persistentContainer.viewContext
 
         let fetchRequest = NSFetchRequest<Drink>(entityName: "Drink")
         fetchRequest.fetchLimit = 1
-        fetchRequest.predicate = NSPredicate(format: "name == %@", name)
+        fetchRequest.predicate = NSPredicate(format: "id == %@", id)
 
         do {
             let drinks = try context.fetch(fetchRequest)

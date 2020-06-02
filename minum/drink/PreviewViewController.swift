@@ -21,7 +21,9 @@ class PreviewViewController: UIViewController {
                "500",
                "600",
                "700",
-               "800"]
+               "800",
+                "900",
+                "1000"]
    
    var selectVolume: String?
 
@@ -65,7 +67,7 @@ class PreviewViewController: UIViewController {
             toolBar.tintColor = .systemBlue
             
             let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(DrinkViewController.dismissKeyboard))
-            
+        
           
           
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width/2, height: 40))
@@ -91,15 +93,21 @@ class PreviewViewController: UIViewController {
 
    //save image and picker to core data
    @IBAction func saveButton(_ sender: Any) {
-     
+    
+    guard let imageToSave = image else {
+               return
+           }
+    
+    guard let newData = CoreDataManager.shared.createDrink(image: imageToSave, amount: selectVolume!) else { return }
        }
 
+    
    func detectPhoto(image: UIImage) {
        //load coreml model
        guard let ciImage = CIImage(image: image) else {
            fatalError("Couldn't convert UIImage to CIImage")
        }
-       guard let model = try? VNCoreMLModel(for: CoreClassifier().model) else {
+       guard let model = try? VNCoreMLModel(for: NewImageClassifier().model) else {
            fatalError("Can't load CoreML Model")
        }
        let request = VNCoreMLRequest(model: model) {
@@ -111,11 +119,13 @@ class PreviewViewController: UIViewController {
            }
            DispatchQueue.main.async {
                if(firstResult.identifier.contains("water bottle")){
-                   self.name = "water_bottle"
-               }else if(firstResult.identifier.contains("water jug")){
-                   self.name = "water_bottle"
+                   self.name = "water"
+               }else if(firstResult.identifier.contains("water cup")){
+                   self.name = "water"
+               }else if(firstResult.identifier.contains("water glass")){
+                   self.name = "water"
                }else{
-                  self.name = "Bukan kendaraan dunia"
+                  self.name = "Not classifier"
                }
              
              self.ResultPhoto.image = UIImage(named: self.name)

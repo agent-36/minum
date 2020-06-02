@@ -15,6 +15,7 @@ class WaterViewController: UIViewController {
     
     var wave: WaveAnimationView!
     
+    @IBOutlet weak var drinkBtnlbl: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,8 @@ class WaterViewController: UIViewController {
         lapView.layer.backgroundColor = UIColor(rgb: 0x253961).cgColor
         lapView.layer.borderWidth = 5.0
     
-    
+        drinkBtnlbl.layer.cornerRadius = 5
+
         wave = WaveAnimationView(frame: CGRect(origin: .zero, size: lapView.bounds.size), color: UIColor(rgb: 0x5CC2F4))
                lapView.addSubview(wave)
                wave.startAnimation()
@@ -48,7 +50,7 @@ class WaterViewController: UIViewController {
     
     @IBAction func goToDrink(_ sender: UIButton) {
                   let storyboard = UIStoryboard(name: "Drink", bundle: nil)
-                  let vc = storyboard.instantiateInitialViewController() as? DrinkViewController ?? UIViewController()
+                  let vc = storyboard.instantiateInitialViewController() as? NewDrinkViewController ?? UIViewController()
                  // vc.modalPresentationStyle = .fullScreen
                   present(vc, animated: true, completion: nil)
           }

@@ -38,6 +38,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iiZ-uV-YKb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="History" image="doc.plaintext" catalog="system" id="VRV-Zo-1kW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="historyTable" destination="UOG-1u-7iz" id="ZYR-D4-9wC"/>
                         <segue destination="2QV-GF-FLQ" kind="presentation" id="jI4-Pe-Ik8"/>

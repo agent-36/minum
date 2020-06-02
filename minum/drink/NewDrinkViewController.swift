@@ -37,7 +37,9 @@ class NewDrinkViewController: UIViewController {
                 captureSession.startRunning()
                     
                 styleCaptureButton()
-            
+                
+                //hide navigation bar for NewDrink Controller
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
             
             }
             

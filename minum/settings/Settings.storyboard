@@ -18,13 +18,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Settings" id="Vv6-mZ-XFl">
-                                    <barButtonItem key="leftBarButtonItem" title="My Water" id="aMF-GP-VnU">
-                                        <connections>
-                                            <segue destination="uEW-G1-PlD" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="Ffh-Dw-c0k"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </navigationItem>
+                                <navigationItem title="Settings" id="Vv6-mZ-XFl"/>
                             </items>
                         </navigationBar>
                         <sections>

@@ -49,7 +49,7 @@
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="CFB-a4-rZv" kind="show" animates="NO" id="bUD-9D-iph"/>
+                                            <segue destination="CFB-a4-rZv" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="bUD-9D-iph"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,7 +132,7 @@
                                     <navigationItem title="Drink" id="UEq-LN-2aH">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="U0I-Xn-3OX">
                                             <connections>
-                                                <segue destination="aiQ-YN-m9G" kind="show" animates="NO" id="rqk-Z5-ssk"/>
+                                                <segue destination="aiQ-YN-m9G" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="rqk-Z5-ssk"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Retake" id="wW8-Bm-NVl">
@@ -195,6 +195,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fNZ-AM-oFj"/>
+        <segue reference="rqk-Z5-ssk"/>
     </inferredMetricsTieBreakers>
 </document>

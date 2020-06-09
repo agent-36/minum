@@ -31,7 +31,7 @@ class HistoryViewController: UIViewController {
     
         if (segue.identifier == "toDetail") {
                let vc = segue.destination as! HistoryDetailViewController
-                vc.id = "20200602"
+                vc.id = "20200603"
            }
     }
 }

@@ -39,12 +39,9 @@ class PreviewViewController: UIViewController {
        createToolbar()
     
       drinkBtnLbl.layer.cornerRadius = 5
-    
-//    self.navigationController?.setNavigationBarHidden(false, animated: true)
              
    }
-   
-    //volume picker
+    
       func createVolumePicker() {
             
             let volumePicker = UIPickerView()

@@ -13,13 +13,12 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func goToHistory(_ sender: UIButton) {
             let storyboard = UIStoryboard(name: "Drink", bundle: nil)
             let vc = storyboard.instantiateInitialViewController() as? NewDrinkViewController ?? UIViewController()
-       //vc.modalPresentationStyle = .formSheet
+        
             present(vc, animated: true, completion: nil)
        
     }

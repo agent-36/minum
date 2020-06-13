@@ -14,7 +14,6 @@ class DrinkViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var drinkButtonTap: UIButton!
     
-//    @IBOutlet weak var saveBtnLbl: UIButton!
     
     @IBOutlet weak var waterVolumeTextField: UITextField!
     

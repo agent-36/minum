@@ -51,7 +51,7 @@
                                                 <accessibility key="accessibilityConfiguration" label="Set a reminder and drink a cup of water whenever they ring"/>
                                                 <edgeInsets key="layoutMargins" top="2" left="8" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                <color key="textColor" red="0.60392999650000001" green="0.60390657189999997" blue="0.60392242669999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -65,7 +65,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VM7-Xa-hVw" userLabel="Stack View 2">
                                 <rect key="frame" x="51" y="369" width="312" height="61"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoard2" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-wa-FYo">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoard1" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-wa-FYo">
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="61"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hDl-7X-cC7">
@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="0.0" y="23" width="258" height="38"/>
                                                 <edgeInsets key="layoutMargins" top="2" left="8" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                <color key="textColor" red="0.60392999650000001" green="0.60390657189999997" blue="0.60392242669999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -113,7 +113,7 @@
                                                 <rect key="frame" x="0.0" y="24" width="248" height="38"/>
                                                 <edgeInsets key="layoutMargins" top="2" left="8" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                <color key="textColor" red="0.60392999650000001" green="0.60390657189999997" blue="0.60392242669999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -167,7 +167,6 @@
     <resources>
         <image name="getstarted-btn" width="366" height="54"/>
         <image name="onBoard1" width="54" height="61"/>
-        <image name="onBoard2" width="54" height="61"/>
         <image name="onBoard3" width="64" height="62"/>
     </resources>
 </document>

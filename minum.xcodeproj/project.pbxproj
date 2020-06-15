@@ -31,13 +31,13 @@
 		6B05D8072486844200422784 /* NewImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B05D8062486844200422784 /* NewImageClassifier.mlmodel */; };
 		6B6486A1247FA4F900A87490 /* NewDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */; };
 		6B6486A32480C65E00A87490 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6486A22480C65E00A87490 /* PreviewViewController.swift */; };
-		96A0226188CBB2820EEA7F31 /* Pods_minum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D959A0A7EE05B53ABB33175 /* Pods_minum.framework */; };
+		A5215CBC7BE5F899301CF060 /* Pods_minum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129B336A03F17896C8A807E /* Pods_minum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0250CD6B248144510031825D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		0250CD6D248145E50031825D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		3D959A0A7EE05B53ABB33175 /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F241C0E7DF7B1E7D47A33F /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
 		609946252474509B008F62AA /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		60994627247450A6008F62AA /* Drink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Drink.storyboard; sourceTree = "<group>"; };
 		60AF9D6F246AB51B003764ED /* minum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +62,8 @@
 		6B05D8062486844200422784 /* NewImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NewImageClassifier.mlmodel; sourceTree = "<group>"; };
 		6B6486A0247FA4F900A87490 /* NewDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDrinkViewController.swift; sourceTree = "<group>"; };
 		6B6486A22480C65E00A87490 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		782D265F0CD5C31B59288A54 /* Pods-minum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.debug.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.debug.xcconfig"; sourceTree = "<group>"; };
-		F1642206AD101D4FE48E3F7F /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
+		9129B336A03F17896C8A807E /* Pods_minum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96904402BBCEC9F048A08CDF /* Pods-minum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minum.release.xcconfig"; path = "Target Support Files/Pods-minum/Pods-minum.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A0226188CBB2820EEA7F31 /* Pods_minum.framework in Frameworks */,
+				A5215CBC7BE5F899301CF060 /* Pods_minum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,19 +87,11 @@
 			path = settings;
 			sourceTree = "<group>";
 		};
-		1A8F3962686BEA1C3DF88941 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3D959A0A7EE05B53ABB33175 /* Pods_minum.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5C2A6F837F4D87962D8DB71C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				782D265F0CD5C31B59288A54 /* Pods-minum.debug.xcconfig */,
-				F1642206AD101D4FE48E3F7F /* Pods-minum.release.xcconfig */,
+				19F241C0E7DF7B1E7D47A33F /* Pods-minum.debug.xcconfig */,
+				96904402BBCEC9F048A08CDF /* Pods-minum.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -152,7 +144,7 @@
 				60AF9D71246AB51B003764ED /* minum */,
 				60AF9D70246AB51B003764ED /* Products */,
 				5C2A6F837F4D87962D8DB71C /* Pods */,
-				1A8F3962686BEA1C3DF88941 /* Frameworks */,
+				BE60C05D617841A10B50EE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +185,14 @@
 			path = onboarding;
 			sourceTree = "<group>";
 		};
+		BE60C05D617841A10B50EE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9129B336A03F17896C8A807E /* Pods_minum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,11 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AF9D88246AB51F003764ED /* Build configuration list for PBXNativeTarget "minum" */;
 			buildPhases = (
-				1772F11F5FDB93A3424E4FE8 /* [CP] Check Pods Manifest.lock */,
+				B192BF7C1D6A2C79B92021BA /* [CP] Check Pods Manifest.lock */,
 				60AF9D6B246AB51B003764ED /* Sources */,
 				60AF9D6C246AB51B003764ED /* Frameworks */,
 				60AF9D6D246AB51B003764ED /* Resources */,
-				6AF621D52FD08D0710C79F30 /* [CP] Embed Pods Frameworks */,
+				DB74F72ADA971EF442F2D0A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,7 +268,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1772F11F5FDB93A3424E4FE8 /* [CP] Check Pods Manifest.lock */ = {
+		B192BF7C1D6A2C79B92021BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,7 +290,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AF621D52FD08D0710C79F30 /* [CP] Embed Pods Frameworks */ = {
+		DB74F72ADA971EF442F2D0A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,7 +470,7 @@
 		};
 		60AF9D89246AB51F003764ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 782D265F0CD5C31B59288A54 /* Pods-minum.debug.xcconfig */;
+			baseConfigurationReference = 19F241C0E7DF7B1E7D47A33F /* Pods-minum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,7 +489,7 @@
 		};
 		60AF9D8A246AB51F003764ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1642206AD101D4FE48E3F7F /* Pods-minum.release.xcconfig */;
+			baseConfigurationReference = 96904402BBCEC9F048A08CDF /* Pods-minum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

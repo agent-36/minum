@@ -108,6 +108,7 @@ class PreviewViewController: UIViewController {
        }
 
     
+    
    func detectPhoto(image: UIImage) {
        //load coreml model
        guard let ciImage = CIImage(image: image) else {

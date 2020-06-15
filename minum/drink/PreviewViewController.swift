@@ -22,11 +22,15 @@ class PreviewViewController: UIViewController {
                "600",
                "700",
                "800",
-                "900",
-                "1000"]
+               "900",
+               "1000"]
    
-   var selectVolume: String?
 
+//var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+ let notification = UINotificationFeedbackGenerator()
+//A concrete UIFeedbackGenerator subclass that creates haptics to communicate successes, failures, and warnings.
+      
+   var selectVolume: String?
    var image:UIImage!
    var text:UILabel!
    var name:String!
@@ -66,7 +70,7 @@ class PreviewViewController: UIViewController {
             toolBar.barTintColor = .white
             toolBar.tintColor = .systemBlue
             
-            let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(DrinkViewController.dismissKeyboard))
+            let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(PreviewViewController.dismissKeyboard))
         
           
           
@@ -93,6 +97,11 @@ class PreviewViewController: UIViewController {
 
    //save image and picker to core data
    @IBAction func saveButton(_ sender: Any) {
+    
+    //self.hapticImpact.impactOccurred()
+    
+    notification.notificationOccurred(.success)
+    //notificationType The type of notification feedback (success,warning,error).
     
     guard let imageToSave = image else {
                return
@@ -153,23 +162,18 @@ extension PreviewViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         return 1
     }
     
-    
-    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return volumes.count
     }
     
-    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return volumes[row]
     }
-    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         selectVolume = volumes[row]
         waterVolumeTextField.text = selectVolume
     }
-    
     
 }

@@ -46,7 +46,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-aX-VsD">
                                         <rect key="frame" x="33" y="47" width="48" height="30"/>
                                         <state key="normal" title="Cancel">
-                                            <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="CFB-a4-rZv" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="bUD-9D-iph"/>
@@ -202,6 +202,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rqk-Z5-ssk"/>
+        <segue reference="fNZ-AM-oFj"/>
     </inferredMetricsTieBreakers>
 </document>

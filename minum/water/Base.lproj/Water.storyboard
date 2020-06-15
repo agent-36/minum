@@ -90,16 +90,6 @@
             </objects>
             <point key="canvasLocation" x="3484.057971014493" y="-788.16964285714278"/>
         </scene>
-        <!--Drink-->
-        <scene sceneID="wS1-sA-Wvm">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Drink" id="us2-UA-4lt" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Uh2-Bu-8Kz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SmQ-gx-VZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4287" y="-890"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2ON-MP-lYL">
             <objects>

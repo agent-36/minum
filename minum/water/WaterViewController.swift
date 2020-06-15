@@ -40,18 +40,10 @@ class WaterViewController: UIViewController {
         wave.stopAnimation()
         
     }
-    
-   @IBAction func goToSetting(_ sender: UIButton) {
-               let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-               let vc = storyboard.instantiateInitialViewController() as? ProfileViewController ?? UIViewController()
-              // vc.modalPresentationStyle = .fullScreen
-               present(vc, animated: true, completion: nil)
-       }
-    
+  
     @IBAction func goToDrink(_ sender: UIButton) {
                   let storyboard = UIStoryboard(name: "Drink", bundle: nil)
                   let vc = storyboard.instantiateInitialViewController() as? NewDrinkViewController ?? UIViewController()
-                 // vc.modalPresentationStyle = .fullScreen
                   present(vc, animated: true, completion: nil)
           }
 

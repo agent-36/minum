@@ -28,10 +28,9 @@ class HistoryViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
         if (segue.identifier == "toDetail") {
                let vc = segue.destination as! HistoryDetailViewController
-                vc.id = "20200603"
+            vc.id = sender as? String
            }
     }
 }
@@ -39,7 +38,10 @@ class HistoryViewController: UIViewController {
 
 extension HistoryViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toDetail", sender: self)
+        let drinks = CoreDataManager.shared.fetchDrinks()
+        
+        performSegue(withIdentifier: "toDetail", sender: drinks?[indexPath.row].id)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -54,9 +56,9 @@ extension HistoryViewController: UITableViewDataSource{
         let drinks = CoreDataManager.shared.fetchDrinks()
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! HistoryTableViewCell
-        let arr: [History] = (drinks!.last!.history!.allObjects as? [History])!
+        let arr: [History] = (drinks?[indexPath.row].history!.allObjects as? [History])!
     
-        cell.desc.text = "You drank \(arr.first!.amount) ml water"
+        cell.desc.text = "You drank \(arr.map({$0.amount}).reduce(0, +)) ml water"
         cell.date.text = "\(drinks?.last?.date ?? "nodata")"
                  
 

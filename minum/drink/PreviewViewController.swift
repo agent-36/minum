@@ -105,6 +105,9 @@ class PreviewViewController: UIViewController {
            }
     
     guard let newData = CoreDataManager.shared.createDrink(image: imageToSave, amount: selectVolume!) else { return }
+    
+    print(newData)
+    
        }
 
     
@@ -117,6 +120,7 @@ class PreviewViewController: UIViewController {
        guard let model = try? VNCoreMLModel(for: NewImageClassifier().model) else {
            fatalError("Can't load CoreML Model")
        }
+    
        let request = VNCoreMLRequest(model: model) {
            (vnRequest, error) in
            print(vnRequest.results?.first as Any)

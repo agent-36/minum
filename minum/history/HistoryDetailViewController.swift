@@ -31,7 +31,8 @@ extension HistoryDetailViewController: UITableViewDelegate{
 
 extension HistoryDetailViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        let data = CoreDataManager.shared.fetchDrink(withName: id)
+        return data?.history?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,9 +41,9 @@ extension HistoryDetailViewController: UITableViewDataSource{
         let history: [History] = (data!.history!.allObjects as? [History])!
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath) as! HistoryDetailTableViewCell
        
-        cell.desc.text = "You drink \(history.last!.amount) water"
-        cell.hour.text = "\(history.last!.hours!)"
-        cell.photo.image = UIImage(data: history.last!.photo!)
+        cell.desc.text = "You drink \(history[indexPath.row].amount) water"
+        cell.hour.text = "\(history[indexPath.row].hours!)"
+        cell.photo.image = UIImage(data: history[indexPath.row].photo!)
 
         return cell
     }
